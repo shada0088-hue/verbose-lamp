@@ -1,0 +1,16 @@
+contacts = {
+    "Ahmed": "01012345678",
+    "Sara": "01123456789",
+    "Mona": "01234567890"
+}
+
+print("All contacts:")
+for name in contacts:
+    print(name)
+
+search_name = input("Enter name to search: ")
+
+if search_name in contacts:
+    print("Phone number:", contacts[search_name])
+else:
+    print("Contact not found")
